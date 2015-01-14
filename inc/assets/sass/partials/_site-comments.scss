@@ -1,0 +1,21 @@
+.entry-comments {
+    .comment-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        .comment {
+            background-color: $gray-lightest;
+            border: 1px solid $gray-lighter;
+            border-right: none;
+            padding: 20px 0 0 20px;
+            margin-bottom: 20px;
+            .reply {
+                margin-bottom: 20px;
+            }
+        }
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// Import bootstrap
+@import "bootstrap.scss";
+
+// Import variables
+@import "variables";
+
+// Import global styles
+@import "global/globals";
+
+// Import defaults
+@import "partials/defaults";
+
+// Import site-header
+@import "partials/site-header";
+
+// Import site-navigation
+@import "partials/site-navigation";
+
+// Import site-main
+@import "partials/site-main";
+
+// Import site-comments
+@import "partials/site-comments";
+
+// Import site-sidebar
+@import "partials/site-sidebar";
+
+// Import site-footer
+@import "partials/site-footer";
+
+// Import templates
+@import "partials/template-home-page";

@@ -1,0 +1,5 @@
+@mixin make-margin-class( $id, $amount, $direction: 'top' ) {
+  .offset-#{$direction}-#{$id} {
+    margin-#{$direction}: $amount * $id;
+  }
+}

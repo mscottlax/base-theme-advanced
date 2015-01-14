@@ -1,0 +1,33 @@
+{
+  "name": "base-theme",
+  "version": "0.1.0",
+  "description": "The base theme for all sebo projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebomarketing/base-theme.git"
+  },
+  "author": "robskidmore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebomarketing/base-theme/issues"
+  },
+  "homepage": "https://github.com/sebomarketing/base-theme",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-concat": "^2.4.1",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-csscss": "^0.1.0",
+    "gulp-gzip": "0.0.8",
+    "gulp-imagemin": "^2.0.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-notify": "^2.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.1.0",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-uglify": "^1.0.1",
+    "gulp-uncss": "^0.5.1",
+    "gulp-util": "^3.0.1"
+  }
+}

@@ -1,0 +1,39 @@
+$xs-margin-step: $screen-xs / 100;
+$sm-margin-step: $screen-sm / 100;
+$md-margin-step: $screen-md / 100;
+$lg-margin-step: $screen-lg / 100;
+
+@for $i from 1 through 10 {
+  @include make-margin-class($i, $xs-margin-step, 'top');
+  @include make-margin-class($i, $xs-margin-step, 'bottom');
+  @include make-margin-class($i, $xs-margin-step, 'left');
+  @include make-margin-class($i, $xs-margin-step, 'right');
+}
+
+@media (min-width: $screen-sm-min) {
+  @for $i from 1 through 10 {
+    @include make-margin-class($i, $sm-margin-step, 'top');
+    @include make-margin-class($i, $sm-margin-step, 'bottom');
+    @include make-margin-class($i, $sm-margin-step, 'left');
+    @include make-margin-class($i, $sm-margin-step, 'right');
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  @for $i from 1 through 10 {
+    @include make-margin-class($i, $md-margin-step, 'top');
+    @include make-margin-class($i, $md-margin-step, 'bottom');
+    @include make-margin-class($i, $md-margin-step, 'left');
+    @include make-margin-class($i, $md-margin-step, 'right');
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  @for $i from 1 through 10 {
+    @include make-margin-class($i, $lg-margin-step, 'top');
+    @include make-margin-class($i, $lg-margin-step, 'bottom');
+    @include make-margin-class($i, $lg-margin-step, 'left');
+    @include make-margin-class($i, $lg-margin-step, 'right');
+  }
+}
+

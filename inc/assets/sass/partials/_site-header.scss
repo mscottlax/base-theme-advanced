@@ -1,0 +1,36 @@
+
+/**
+ * Site Header Styles
+ */
+#site-header {
+  background-color: $gray-lightest;
+  border-bottom: 1px solid $gray-lighter;
+  position: relative;
+  z-index: 1000;
+  #header-phone {
+    position:absolute;
+    right:0;
+    h2 {
+      margin:0;
+      color: $gray-light;
+      span {
+        color: $brand-primary;
+        font-weight: bold;
+      }
+    }
+  }
+  #header-wrapper {
+    position:relative;
+  }
+  #site-title {
+    font-size: 36px;
+    margin: 22px 0;
+  }
+  #site-logo {
+    margin:10px 0;
+  }
+  #site-description {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}

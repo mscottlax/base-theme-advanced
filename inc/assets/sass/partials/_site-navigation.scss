@@ -1,0 +1,125 @@
+#site-navigation {
+  clear: both;
+  .menu-button {
+    display: none;
+    cursor: pointer;
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+  }
+  .menu-mobile-header {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #000;
+    color: #fff;
+    z-index: 999;
+    padding: 10px;
+    &.show-menu-header {
+      display: block;
+    }
+  }
+  .sub-menu-button {
+    display: none;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    &:before {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .show-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    padding-top: 40px;
+    overflow: scroll;
+    li {
+      width: 100%;
+      display: block;
+      a {
+        color: #fff;
+      }
+    }
+    .sub-menu {
+      position: static;
+      display: none;
+    }
+    .sub-menu-button {
+      display: block;
+    }
+    .show-sub-nav {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: $gray-light;
+      z-index: 99;
+      li {
+        float: none;
+        width: 200px;
+        position: relative;
+        a {
+          color: $white;
+        }
+        ul {
+          left: 100%;
+          top: 0;
+        }
+
+      }
+    }
+    li {
+      display: inline-block;
+      position: relative;
+      &:hover {
+        & > ul{
+          display: block;
+        }
+      }
+      &:last-child {
+        &:hover > ul {
+          left:auto;
+          right: 0;
+        }
+
+        &:hover > ul ul {
+          left:auto;
+          right: 100%;
+        }
+
+      }
+      a {
+        padding: 12px 15px;
+        font-weight: 600;
+        display: inline-block;
+        color: $gray-dark;
+        width: 100%;
+      }
+    }
+  }
+}
