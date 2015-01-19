@@ -20,7 +20,6 @@
     });
 
     $(document).on('click', '.sub-menu-button', function() {
-        console.log('Clicky');
         $(this).toggleClass('dashicons-arrow-down-alt2').toggleClass('dashicons-arrow-up-alt2');
         $(this).parent().toggleClass('show-sub-nav');
     });
