@@ -47,7 +47,7 @@ http://sebomarketing.com
                 if(get_field('logo','options')) :
                     $logo = get_field('logo','options');?>
                     <div id="site-logo">
-                        <a href="/"><img src="<?php echo $logo['url']; ?>" alt="><?php bloginfo('name');?>" title="><?php bloginfo('name');?>" /></a>
+                        <a href="/"><img src="<?php echo $logo['url']; ?>" alt="<?php bloginfo('name');?>" title="><?php bloginfo('name');?>" /></a>
                     </div>
                 <?php elseif(is_front_page()) : ?>
                     <h1 id="site-title"><?php bloginfo('name');?></h1>
