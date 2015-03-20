@@ -8,6 +8,7 @@ The base theme for all sebo projects
 - [ ] Add repeating patterns modules
 - [ ] ACF License option
 - [ ] ACF based layouts
+- [ ] Add gulp default task
 
 ## Maybe
 - [ ] [hide header on scroll](https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c)
