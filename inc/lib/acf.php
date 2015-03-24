@@ -62,4 +62,42 @@ if(function_exists("register_field_group"))
         ),
         'menu_order' => 0,
     ));
+    
+    /*
+    *  Google Tag Manager Field
+    */
+    register_field_group(array (
+        'id' => 'google_tag',
+        'title' => 'Google Tag Manager',
+        'fields' => array (
+            array (
+                'key' => 'field_54d158b3fcbf8',
+                'label' => 'Google Tag Manager',
+                'name' => 'google_tag_manager',
+                'type' => 'text',
+                'placeholder' => 'GTM-XXXXXX',
+                'wrapper' => array (
+                    'width' => 15,                    
+                ),
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'acf-options-header',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 1,
+    ));
 }
