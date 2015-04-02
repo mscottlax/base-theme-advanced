@@ -86,6 +86,7 @@ gulp.task('styles', function() {
         .pipe(rename({suffix: '-min'}))
         .pipe(minify({keepBreaks:true}))
         .pipe(minify({keepSpecialComments: 0}))
+        .pipe(gulp.dest(paths.styles.dest))
         .pipe(gzip())
         .pipe(gulp.dest(paths.styles.dest));
 });
