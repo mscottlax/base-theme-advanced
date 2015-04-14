@@ -14,14 +14,9 @@
         $('.menu-mobile-header').removeClass('show-menu-header');
     });
     $('<div class="sub-menu-button dashicons dashicons-arrow-down-alt2"></div>').appendTo('.menu-item-has-children');
-    $('#menu-item-311 a').on('click', function() {
+    $('.sub-menu-button').on('click touchstart', function() {
         $(this).parent().toggleClass('show-sub-nav');
-        $(this).parent().find('> .sub-menu-button').toggleClass('dashicons-arrow-down-alt2').toggleClass('dashicons-arrow-up-alt2');
-    });
-
-    $(document).on('click', '.sub-menu-button', function() {
         $(this).toggleClass('dashicons-arrow-down-alt2').toggleClass('dashicons-arrow-up-alt2');
-        $(this).parent().toggleClass('show-sub-nav');
     });
  });
 
