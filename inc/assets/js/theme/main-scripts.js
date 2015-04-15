@@ -14,7 +14,7 @@
         $('.menu-mobile-header').removeClass('show-menu-header');
     });
     $('<div class="sub-menu-button dashicons dashicons-arrow-down-alt2"></div>').appendTo('.menu-item-has-children');
-    $('.sub-menu-button').on('click touchstart', function() {
+    $('.sub-menu-button').on('click', function() {
         $(this).parent().toggleClass('show-sub-nav');
         $(this).toggleClass('dashicons-arrow-down-alt2').toggleClass('dashicons-arrow-up-alt2');
     });
